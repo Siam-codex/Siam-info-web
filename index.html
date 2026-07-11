@@ -1437,7 +1437,7 @@ background: rgba(0, 0, 0, 0.7);
             searchBtn.disabled = true; searchBtn.textContent = '⏳ Loading...'; loading.classList.add('active');
             try {
                 const [infoResponse, bannerResponse] = await Promise.allSettled([
-                    fetch(`https://mafuuuu-info-api.vercel.app/mafu-info?uid=${uid}`),
+                    fetch(`https://nirob-x-info.vercel.app/info?uid={uid}`),
                     fetch(`https://mafuu-banner-api.vercel.app/profile?uid=${uid}`)
                 ]);
                 loading.classList.remove('active');
